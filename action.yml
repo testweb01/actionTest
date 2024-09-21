@@ -1,0 +1,14 @@
+name: "Hello World Action"
+description: "A GitHub Action to log 'Hello, World!'"
+author: "Your Name (https://github.com/yourusername)"
+branding:
+  icon: "globe"
+  color: "blue"
+runs:
+  using: "node20"
+  main: "index.js"
+inputs:
+  message:
+    description: "The message to log"
+    default: "Hello, World!"
+    required: false
